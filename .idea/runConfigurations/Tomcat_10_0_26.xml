@@ -1,15 +1,16 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Tomcat 10.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.26" ALTERNATIVE_JRE_ENABLED="false">
-    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/tomcat_demo_war_exploded/notebook/public/index.html" />
+    <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/hello-servlet" />
     <deployment>
       <artifact name="tomcat-demo:war exploded">
         <settings>
-          <option name="CONTEXT_PATH" value="/tomcat_demo_war_exploded" />
+          <option name="CONTEXT_PATH" value="" />
         </settings>
       </artifact>
     </deployment>
     <server-settings>
-      <option name="BASE_DIRECTORY_NAME" value="8d1fee34-57ae-41f0-aa9d-d2ba5cfe3667" />
+      <option name="BASE_DIRECTORY_NAME" value="tomcat-demo-base" />
+      <option name="HTTP_PORT" value="8080" />
     </server-settings>
     <predefined_log_file enabled="true" id="Tomcat" />
     <predefined_log_file enabled="true" id="Tomcat Catalina" />

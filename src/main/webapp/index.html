@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+<p th:text="${msg}">dfasdfasdfaf</p>
+
+<button id="btn" >Click</button>
+
+<div id="footer" th:insert="~{fragment :: copy}">
+    <div id="output"></div>
+</div>
+
+<script>
+    $("#btn").click(function (){
+        console.log("works")
+        $.get("/AnotherServlet",{frontMsg: "Hello form front"}, function (data, status){
+           alert("Data: " + data + " Status: " + status);
+            $("#footer").replaceWith(data);
+       });
+    });
+</script>
+
+
+
+</body>
+</html>
